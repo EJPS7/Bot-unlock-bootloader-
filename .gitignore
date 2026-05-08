@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+.env
+.ENV
+
+# IDE y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema Operativo
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.stackdump
+
+# Logs y archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+
+# Archivos sensibles
+config.json
+.env.local
+secrets.txt
+credentials.json
+token.txt
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos de caché
+.cache/
+*.cache
+
+# Termux específico
+data/
