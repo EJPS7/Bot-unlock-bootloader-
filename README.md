@@ -14,7 +14,36 @@ Script automatizado que envía solicitudes de desbloqueo de bootloader a las 00:
 ## 📋 Requisitos
 
 - **Python 3.6 o superior**
+- **Firefox** con la extensión [Cookie Editor](https://addons.mozilla.org/es/firefox/addon/cookie-editor/)
 - Conexión a Internet estable
+
+## 🔑 Configuración Previa: Obtener la Cookie
+
+Antes de ejecutar el script, necesitas obtener la cookie `new_bbs_servicetoken`. Sigue estos pasos:
+
+### 1️⃣ Instala la Extensión Cookie Editor
+
+- Abre Firefox
+- Ve a [Cookie Editor en Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/cookie-editor/)
+- Haz clic en **"Añadir a Firefox"** e instala la extensión
+
+### 2️⃣ Inicia Sesión en Mi.com
+
+1. Abre Firefox y ve a **https://c.mi.com/global**
+2. **Inicia sesión** con tu cuenta Mi
+3. Espera a que la página cargue completamente
+
+### 3️⃣ Extrae la Cookie
+
+1. Abre la extensión **Cookie Editor** (icono en la esquina superior derecha de Firefox)
+2. Busca la cookie llamada **`new_bbs_servicetoken`**
+3. Copia el valor completo de la cookie
+4. Guarda este valor en un lugar seguro
+
+### 4️⃣ Funciona en Todas las Plataformas
+
+- ✅ **Windows, Linux, macOS** - Usa Firefox normalmente
+- ✅ **Android (Termux)** - Usa Firefox para Android, instala Cookie Editor y sigue los mismos pasos
 
 ## ⚡ Instalación Rápida
 
@@ -50,7 +79,10 @@ python script.py
    python script.py
    ```
 
-2. ¡Listo! El script se encargará automáticamente de:
+2. El script te pedirá la cookie `new_bbs_servicetoken` que obtuviste anteriormente
+
+3. ¡Listo! El script se encargará automáticamente de:
+   - Solicitar la cookie `new_bbs_servicetoken`
    - Instalar las dependencias necesarias (solo la primera vez)
    - Enviar la solicitud de desbloqueo a las 00:00 (hora Beijing)
    - Mantener la aplicación en ejecución
@@ -60,10 +92,17 @@ python script.py
 ⚠️ **ADVERTENCIA:**
 - Asegúrate de dejar el script en ejecución durante la hora establecida (00:00 Beijing)
 - El dispositivo debe tener conexión a Internet
+- **Mantén tu cookie `new_bbs_servicetoken` privada y segura** - No la compartas con nadie
 - Esta herramienta es solo para fines educativos y personales
 - El desbloqueo de bootloader puede anular la garantía en algunos dispositivos
 
 ## 🛠️ Solución de Problemas
+
+### No encuentro la cookie `new_bbs_servicetoken`
+- Verifica que hayas iniciado sesión correctamente en https://c.mi.com/global
+- Asegúrate de que Cookie Editor esté habilitado en Firefox
+- Intenta recargar la página (Ctrl+F5) y busca nuevamente
+- La cookie debería aparecer cuando la página esté completamente cargada
 
 ### El script no se inicia en Termux
 ```bash
@@ -83,7 +122,8 @@ python script.py
 
 ### La solicitud no se envía
 - Verifica tu conexión a Internet
-- Asegúrate de que el servidor esté disponible
+- Asegúrate de que la cookie sea válida
+- Verifica que el servidor esté disponible
 - Revisa los logs de la aplicación
 
 ## 📱 Plataformas Soportadas
