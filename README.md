@@ -87,6 +87,37 @@ python script.py
    - Enviar la solicitud de desbloqueo a las 00:00 (hora Beijing)
    - Mantener la aplicación en ejecución
 
+## ✅ Recomendaciones Importantes para Maximizar el Éxito
+
+### 📍 A la Medianoche (00:00 Hora Beijing)
+
+Sin importar cuál sea el resultado del bot, siempre debes seguir estos pasos:
+
+1. **Agregar cuenta y dispositivo en Opciones de Desarrollador:**
+   - Ve a **Configuración > Acerca del teléfono > Versión MIUI** (toca 7 veces)
+   - Entra en **Opciones de Desarrollador**
+   - Busca la opción de agregar cuenta y dispositivo
+   - Intenta agregar tu cuenta Mi y el dispositivo
+
+2. **Si la opción de agregar dispositivo no funciona correctamente:**
+   - ⚠️ **Cierra sesión** de tu cuenta Mi en el dispositivo
+   - **Reinicia** el dispositivo
+   - **Vuelve a iniciar sesión** con tu cuenta Mi
+   - Intenta nuevamente agregar el dispositivo en Opciones de Desarrollador
+
+3. **Activar "Encontrar Dispositivo":**
+   - Una vez que hayas agregado correctamente el dispositivo
+   - Activa la opción **"Encontrar Dispositivo"** en Opciones de Desarrollador
+   - Esto es esencial para que el proceso de desbloqueo funcione correctamente
+
+### 💡 Si el Bot No Funciona Correctamente
+
+- Cierra sesión de tu cuenta Mi en el dispositivo
+- Reinicia el dispositivo completamente
+- Vuelve a iniciar sesión con tu cuenta Mi
+- Verifica que "Encontrar Dispositivo" esté activado
+- Intenta ejecutar el bot nuevamente
+
 ## 📝 Notas Importantes
 
 ⚠️ **ADVERTENCIA:**
@@ -125,6 +156,14 @@ python script.py
 - Asegúrate de que la cookie sea válida
 - Verifica que el servidor esté disponible
 - Revisa los logs de la aplicación
+- Verifica que "Encontrar Dispositivo" esté habilitado en Opciones de Desarrollador
+
+### No puedo agregar el dispositivo en Opciones de Desarrollador
+- Cierra sesión de tu cuenta Mi completamente
+- Reinicia el dispositivo
+- Vuelve a iniciar sesión
+- Intenta nuevamente agregar el dispositivo
+- Asegúrate de activar "Encontrar Dispositivo" después
 
 ## 📱 Plataformas Soportadas
 
